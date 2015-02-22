@@ -1,0 +1,67 @@
+---
+defaults:
+  ec2014: &ec2014
+    prefix: eurucamp2014
+cassettes:
+  ec2014-4-main:
+    name: eurucamp 2014 day 2 before lunch stage cam
+  ec2014-4-speaker:
+    name: eurucamp 2014 day 2 before lunch speaker cam
+  ec2014-5-main:
+    name: eurucamp 2014 day 2 after lunch stage cam
+  ec2014-5-speaker:
+    name: eurucamp 2014 day 2 after lunch speaker cam
+sessions:
+  day2-ses1:
+    <<: *ec2014
+    cassette: ec2014-4-main
+    name:  Culture Eats Products For Breakfast
+    start: 00:04:52
+    stop:  00:27:23
+  day2-ses2:
+    <<: *ec2014
+    cassette: ec2014-4-main
+    name:  Let's build a game with Ruby
+    start: 00:35:33
+    stop:  01:00:52.9
+  day2-ses3:
+    <<: *ec2014
+    cassette: ec2014-4-main
+    name:  It Takes a Village to Make a Programmer
+    start: 01:22:59.1
+    stop:  01:44:16.5
+  day2-ses4:
+    <<: *ec2014
+    cassette: ec2014-4-main
+    name:  JRuby Dog & Pony Show
+    start: 01:47:51
+    stop:  02:21:30.5
+  day2-ses5:
+    <<: *ec2014
+    cassette: ec2014-4-main
+    name:  Internet of Dusty Things
+    start: 02:22:40.3
+    stop:  02:57:20
+  # day2-ses6: Missing at day2!
+  #   cassette:
+  #   name:  The Agile Inception Deck / Kickstarting your project
+  #   start:
+  #   stop:
+  day2-ses7:
+    <<: *ec2014
+    cassette: ec2014-5-main
+    name:  RubyMotion and Accessibility
+    start: 00:15:26
+    stop:  00:52:33
+  day2-ses8:
+    <<: *ec2014
+    cassette: ec2014-5-main
+    name:  How Ruby helps get more Women on Stage
+    start: 00:54:43
+    stop:  01:07:47
+  day2-ses9:
+    <<: *ec2014
+    cassette: ec2014-5-main
+    name:  'Refactoring Ruby with Monads (or, Monads: The Good Parts)'
+    start: 01:08:22
+    stop:  01:38:12.5
