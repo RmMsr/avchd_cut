@@ -74,13 +74,13 @@ If you don't have a media player that understands AVCHD recordings you can
 use the `--concat` option to create one large file of one cassette.
 
     avchd_cut.rb --concat --plan sessions.yml
-    # will create ./out/{cassette}.mts
+    # will create ./out/event_tape_1.mts and ./out/event_tape_2.mts
 
 To check if your timestamps are correct extract that session without time
 consuming transcoding.
 
-    avchd_cut.rb --extract --plan sessions.yml --session talk3 --quick
-    # will create ./out/{prefix}-{session}-{name}.mts
+    avchd_cut.rb --extract --plan sessions.yml --session day1-ses2 --quick
+    # will create ./out/eventName-day1-ses2-First_talk.mts
 
 If you don't like the result just adjust the session plan and repeat the
 last command until you are satisfied.
